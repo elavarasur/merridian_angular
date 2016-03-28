@@ -1,0 +1,28 @@
+/* ============================================================
+  ANIMATED UNDERLINE
+============================================================ */
+.cmn-t-underline {
+  position: relative;
+  color: #ff3296;
+}
+.cmn-t-underline:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 3px;
+  background-color: rgba(0, 159, 255, 0.74);
+  content: "";
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+.cmn-t-underline:hover {
+  color: rgba(0, 159, 255, 0.74);
+}
+.cmn-t-underline:hover:after {
+  margin-top:-5px;
+  width:100%;
+}
